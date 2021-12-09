@@ -1,0 +1,8 @@
+import "../util.scrypt";
+import "a.scrypt";
+
+library B {
+    static function bFunc(): int {
+        return A.aFunc() + Util.fromLEUnsigned(b'0010');
+    }
+}

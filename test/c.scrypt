@@ -1,0 +1,9 @@
+import "../util.scrypt";
+import "../adir/a.scrypt";
+import "../adir/b.scrypt";
+
+contract C {
+    public function unlock(int res) {
+        require(res == A.aFunc() + B.bFunc());
+    }
+}
